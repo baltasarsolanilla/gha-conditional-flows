@@ -1,9 +1,5 @@
 name: Uses Reusable
 on: workflow_dispatch
-on:
-  push:
-    branches:
-      - main
 jobs:
   lint:
     runs-on: ubuntu-latest

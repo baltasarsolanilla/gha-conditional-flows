@@ -1,0 +1,11 @@
+name: Uses Reusable
+on: workflow_dispatch
+jobs:
+  dummy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get code
+        uses: actions/checkout@v3
+  reuses:
+    needs: dummy
+    uses: './.github/reusable.yml'

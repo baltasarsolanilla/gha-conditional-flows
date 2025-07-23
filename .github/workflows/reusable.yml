@@ -11,6 +11,7 @@ on:
       result:
         description: The description of the result
         value: ${{ jobs.deploy-elsewhere.outputs.outcome }}
+  workflow_dispatch:
 jobs:
   deploy-elsewhere:
     outputs:

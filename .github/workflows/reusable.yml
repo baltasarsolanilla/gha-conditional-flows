@@ -16,6 +16,8 @@ jobs:
     outputs:
       outcome: ${{ steps.output-information.outputs.step-result }}
     runs-on: ubuntu-latest
+    container:
+      image: node:16
     steps:
       - name: Get code
         uses: actions/download-artifact@v4
